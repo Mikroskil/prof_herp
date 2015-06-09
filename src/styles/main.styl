@@ -8,6 +8,15 @@
 
 // Style using Bespoke Classes: https://github.com/markdalgleish/bespoke-classes
 
+body
+  background:radial-gradient(circle, #555A5F, #1C1E20) repeat scroll 0% 0% #282A2D
+  color :#ccc
+
+a
+  color: #00b8ff
+  text-decoration: none
+
+
 .bespoke-parent
   position: absolute
   top: 0
@@ -27,8 +36,8 @@
     pointer-events: auto
 
 .bespoke-slide
-  width: 640px
-  height: 480px
+  width: 1080px
+  height: 720px
   position: absolute
   top: 50%
   left: 50%
@@ -38,6 +47,8 @@
   flex-direction: column
   justify-content: center
   align-items: center
+  transition: all .0 ease
+  transform-origin: 50% 50% -400px
 
 .bespoke-inactive
   opacity: 0
@@ -69,8 +80,14 @@
 .bespoke-progress-bar
   position: absolute
   height: 100%
-  background: #ccc
+  background: #99d3f0
   transition: width .6s ease
+
+article.home.bespoke-before
+  transform: rotateY(-90deg)
+
+.bespoke-after
+  transform: rotateY(90deg)
 
 .emphatic
   background: #222
